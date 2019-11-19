@@ -1,0 +1,118 @@
+
+.center-div
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.evaluation {
+    margin: 0 auto;
+    width: 350px;
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    background-color: transparent;
+    background-image: none;
+    border-color: #6c757d;
+}
+
+.jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    background-color: white;
+}
+@media (min-width: 300px) {
+    .jumbotron {
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+    }
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: .25rem;
+}
+
+.bold-mute{
+    color: gray;
+    /*font-weight: bold;*/
+}
+
+.thematicBreak{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.bgEmpha{
+    background-color: rgba(223, 230, 230, 0.4);
+    padding: 20px;
+}
+
+.histTag{
+    background-color: #cfe2f3;
+    border-radius: 3px;
+    padding: 2px 5px 2px 5px;
+}
+
+.histTable{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+tr{
+    vertical-align: top;
+}
+
+.saveBtnQuick{
+    font-weight:bold;
+    color: white;
+}
+
+
+/* Important checkbox*/
+.star {
+    visibility:hidden;
+    font-size:35px;
+    cursor:pointer;
+
+}
+.star:before {
+    content: "\2605";
+    position: absolute;
+    visibility:visible;
+    color: orange;
+}
+.star:checked:before {
+    content: "\2606";
+    position: absolute;
+    color: black;
+}
+
+.styleConfirm{
+    text-align: center;
+    color: gray;
+}

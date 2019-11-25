@@ -133,6 +133,8 @@
             };
         block[12] = w;           //sewer6
 
+a
+
 
 
         /**
@@ -594,14 +596,40 @@
                     walk_left = 1;
                 }
                 var horizontal=parseInt($('#mario').css("left"));
-                if(horizontal>leftEdge&&checkleft(horizontal-v0_x,parseInt($('#mario').css("top"))))
+                if(checkleft(horizontal-mario_width-v0_x,parseInt($('#mario').css("top"))))
                 {
-                    $('#mario').css({"left":horizontal-v0_x+'px'});
+                    if(horizontal-v_x>leftEdge)
+                    {
+                        console.log(horizontal);
+                        $('#mario').css({"left":horizontal-v0_x+'px'});
+                    }
+                    else {
+
+                            $('#ground').css({'left': parseInt($('#ground').css('left')) + v0_x + 'px'});
+                            for (var i = 1; i <= tot_wall; i++) {
+                                $('#wall' + i).css({"left": parseInt($('#wall' + i).css("left")) + v0_x + 'px'});
+                            }
+                            for (var i = 1; i <= tot_cloud; i++) {
+                                $('#cloud' + i).css({"left": parseInt($('#cloud' + i).css("left")) + v0_x + 'px'});
+                            }
+                            for (var i = 1; i <= tot_hill; i++) {
+                                $('#hill' + i).css({"left": parseInt($('#hill' + i).css("left")) + v0_x + 'px'});
+                            }
+                            for (var i = 1; i <= tot_sewer; i++) {
+                                $('#sewer' + i).css({"left": parseInt($('#sewer' + i).css("left")) + v0_x + 'px'});
+                            }
+                            for (var i = 1; i <= tot_monster; i++) {
+                                $('#monster' + i).css({"left": parseInt($('#monster' + i).css("left")) + v0_x + 'px'});
+                            }
+                            for (var i = 0; i < block.length; i++) {
+                                block[i].left = block[i].left + v0_x;
+                                block[i].right = block[i].right + v0_x;
+                            }
+                        }
+                    }
                 }
-            }
             if(!falldown&&!jump_up&&!jump_left_up&&!jump_right_up&&parseInt($('#mario').css("top"))<groundEdge)
             {
-
                 var k = checkdown(parseInt($('#mario').css("left")),parseInt($('#mario').css("top"))+2);
                 if(k==0)
                 {
@@ -630,7 +658,7 @@
                     walk_right = 1;
                 }
                 var horizontal=parseInt($('#mario').css("left"));
-                if(checkright(horizontal+mario_width+v0_x,parseInt($('#mario').css("top"))))
+                if(checkleft(horizontal+mario_width+v0_x,parseInt($('#mario').css("top"))))
                 {
                     if(horizontal+v_x<rightEdge)
                     {
@@ -883,11 +911,8 @@
     </script>
 </head>
 <body>
-<div id="left-curtain"></div>      <!--左边的幕布-->
-<div id="main">
-    <div id="backcolor"></div>
-</div>
-<div id="right-curtain"></div>     <!--右边的幕布-->
+
+
 <div id="ground"></div>			   <!--地面-->
 
 

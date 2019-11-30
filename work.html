@@ -7,45 +7,41 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./work-general/general.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="./bootstrap-4.3.1.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
   <title>View My Work</title>
 </head>
 <body>
-
-  <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
-      </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">
-            Home
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link">
-            About Me
-          </a>
-        </li>
-        <li class="nav-item current">
-          <a href="work.html" class="nav-link">
-            My Work
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            How To Reach Me
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onClick="javascript :history.back(-1);"><i class="fa fa-arrow-left" aria-hidden="true">back</i></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="index.html">Homepage</a>
+          <a class="dropdown-item" href="work.html">General Mode</a>
+          <a class="dropdown-item" href="Project1.html">Redesign of printers</a>
+          <a class="dropdown-item" href="Project2.html">PETIME</a>
+          <a class="dropdown-item" href="Project3.html">UniqueU</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="photo%20gallery.html">Handcrafts</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 
   <main id="work">
     <h1 class="lg-heading">
@@ -58,45 +54,39 @@
 
     <div class="projects">
       <div class="item">
-        <a href="#!">
-          <img src="./img/projects/project1.jpg" alt="Project">
+        <a href="Project1.html">
+          <img src="./image/project1.png" alt="Project1" class="img-fluid" width="100%"></a>
+        <a href="Project1.html" class="btn-dark" style="width: 240px">
+          <i class="fas fa-eye"> Redesign of printer</i>
+        </a>
+      </div>
+      <div class="item">
+        <a href="Project2.html">
+          <img src="./image/project2,png" alt="Project2" class="img-fluid" width="100%"></a>
+        <a href="#" class="btn-dark" style="width: 240px">
+          <i class="fas fa-eye"> PETIME</i>
+        </a>
+      </div>
 
-        <a href="#" class="btn-dark">
-          <i class="fas fa-eye"></i> Project
-        </a>
-      </div>
       <div class="item">
-        <a href="#!">
-          <img src="./img/projects/project2.jpg" alt="Project">
-        <a href="#" class="btn-dark">
-          <i class="fas fa-eye"></i> Project
-        </a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="./img/projects/project3.jpg" alt="Project">
+        <a href="Project3.html">
+          <img src="./image/project3.png" alt="Project3" class="img-fluid" width="100%">
         </a>
 
-        <a href="#" class="btn-dark">
-          <i class="fas fa-eye"></i> Project
+        <a href="#" class="btn-dark" style="width: 240px">
+          <i class="fas fa-eye"> UniqueU</i>
         </a>
       </div>
+
       <div class="item">
-        <a href="#!">
-          <img src="img/projects/project4.jpg" alt="Project">
+        <a href="photo%20gallery.html">
+          <img src="./image/handcrafts.png" alt="Project4" class="img-fluid" width="100%">
         </a>
-        <a href="#" class="btn-dark">
-          <i class="fas fa-eye"></i> Project
-        </a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project5.jpg" alt="Project">
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fas fa-eye"></i> Project
+        <a href="#" class="btn-dark" style="width: 240px">
+          <i class="fas fa-eye"> Handcrafts</i>
         </a>
       </div>
+
     </div>
   </main>
 
@@ -104,7 +94,10 @@
     Copyright &copy; 2019
   </footer>
 
-  <script src="js/main.js"></script>
+<script src="./jquery-3.3.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./popper.min.js"></script>
+<script src="./bootstrap-4.3.1.js"></script>
 </body>
 
 </html>

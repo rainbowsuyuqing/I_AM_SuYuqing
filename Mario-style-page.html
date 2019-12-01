@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Super Mario" />
@@ -28,7 +28,7 @@
         var w=
             {
                 left:526,
-                right:654,
+                right:590,
                 up:330,
                 down:362
             };
@@ -44,8 +44,8 @@
         block[1] = w;       //sewer1
         w =
             {
-                left:700,
-                right:732,
+                left:645,
+                right:677,
                 up:280,
                 down:312
             };
@@ -93,7 +93,7 @@
         w =
             {
                 left:1920,
-                right:2016,
+                right:1952,
                 up:350,
                 down:382
             };
@@ -101,37 +101,23 @@
         w =
             {
                 left:2100,
-                right:2292,
+                right:2260,
+                up:330,
+                down:362
+            };
+        block[9] = w;           //the fort
+
+        w=
+            {
+                left:2293,
+                right:2393,
                 up:250,
                 down:282
             };
-        block[9] = w;           //wall6
-        w =
-            {
-                left:2478,
-                right:2544,
-                up:382,
-                down:445
-            };
-        block[10] = w;           //sewer4
+        block[10]=w; //invisible wall
 
-        w =
-            {
-                left:2878,
-                right:2944,
-                up:349,
-                down:445
-            };
-        block[11] = w;           //sewer5
 
-        w =
-            {
-                left:3278,
-                right:3343,
-                up:318,
-                down:445
-            };
-        block[12] = w;           //sewer6
+
 
 
 
@@ -152,10 +138,21 @@
                         (block[i].left<x&&x<block[i].right))
                     {
                         if(i===2) {
-                            window.location.href = "./PetTime.html";
+                            if(confirm('Do you want to see Redesign of Printer page?')){
+                            window.location.href = "./Project1.html";}
                         }
                         if(i===7) {
-                            window.location.href = "./Project2.html";
+                            if(confirm('Do you want to see PETIME page?')){
+                                window.location.href = "./Project2.html";}
+                        }
+                        if(i===8){
+                            if(confirm("Do you want to see UniqueU page?")){
+                                window.location.href="./Project3.html";
+                            }
+                        }
+                        if(i===9){
+                            if(confirm('Do you want to see my handcrafts?'))
+                                window.location.href="./photo gallery.html";
                         }
 
                         return i+1;
@@ -239,11 +236,11 @@
                 $('#mario').css({"top":block[k-1].up-mario_height+'px'});
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"images/marior1.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"mario-images/mariol1.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
                 }
                 falldown = 0;
                 walk_left = 0;
@@ -260,11 +257,11 @@
                 $('#mario').css({"top":groundEdge+'px'});
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"mario-images/marior1.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"mario-images/mariol1.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
                 }
                 falldown = 0;
                 walk_left = 0;
@@ -289,11 +286,11 @@
                     $('#mario').css({"top":block[k-1].up-mario_height+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"mario-images/marior1.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"mario-images/mariol1.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
                     }
                     jump_up = 0;
                     key_right_up = 1;
@@ -321,11 +318,11 @@
                     $('#mario').css({"top":groundEdge+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"mario-images/marior1.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"mario-images/mariol1.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
                     }
                     jump_up = 0;
                     key_right_up = 1;
@@ -353,11 +350,11 @@
                     $('#mario').css({"top":block[k-1].up-mario_height+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"mario-images/marior1.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"mario-images/mariol1.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
                     }
                     jump_left_up = 0;
                     v0_y = 24;
@@ -387,11 +384,11 @@
                     $('#mario').css({"top":groundEdge+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"mario-images/marior1.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"mario-images/mariol1.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
                     }
                     jump_left_up = 0;
                     v0_y = 24;
@@ -417,11 +414,11 @@
                     $('#mario').css({"top":block[k-1].up-mario_height+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"mario-images/marior1.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"mario-images/mariol1.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
                     }
                     jump_right_up = 0;
                     v0_y = 24;
@@ -484,11 +481,11 @@
                     $('#mario').css({"top":groundEdge+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"mario-images/marior1.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"mario-images/mariol1.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
                     }
                     jump_right_up = 0;
                     v0_y = 24;
@@ -513,11 +510,11 @@
                 id2 = setInterval("jump_leftup()",30);
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"mario-images/mariojump1.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/RightJump.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"mario-images/mariojump4.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/LeftJump.gif");
                 }
                 jump_left_up = 1;
 
@@ -540,11 +537,11 @@
                 id3 = setInterval("jump_rightup()",30);
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"mario-images/mariojump1.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/RightJump.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"mario-images/mariojump4.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/LeftJump.gif");
                 }
                 jump_right_up = 1;
             }
@@ -568,11 +565,11 @@
                 key_left_up = 0;
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"mario-images/mariojump1.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/RightJump.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"mario-images/mariojump4.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/LeftJump.gif");
                 }
                 jump_up = 1;
             }
@@ -592,7 +589,7 @@
                 facing = 0;
                 if(walk_left==0&&!jump_up)
                 {
-                    $('#mario')[0].setAttribute('src',"mario-images/walking3.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/walkleft.gif");
                     walk_left = 1;
                 }
                 var horizontal=parseInt($('#mario').css("left"));
@@ -654,7 +651,7 @@
                 facing = 1;
                 if(walk_right==0&&!jump_up)
                 {
-                    $('#mario')[0].setAttribute('src',"mario-images/walking1.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/walkright.gif");
                     walk_right = 1;
                 }
                 var horizontal=parseInt($('#mario').css("left"));
@@ -826,27 +823,10 @@
         id8 = setInterval('monster2_move()',30);
 
 
-        id9 = setInterval('win()',30);
         /**
          * 判断游戏是否顺利结束
          */
-        function win()
-        {
-            if(parseInt($('#sewer7').css('left'))<=608)
-            {
-                clearInterval(id9);
-                if(confirm('恭喜您胜利了，是否重新游戏?取消则关闭当前页面。'))
-                {
-                    document.location.reload();
-                }
-                else
-                {
-                    window.opener=null;
-                    window.open('','_self');
-                    window.close();
-                }
-            }
-        }
+
 
 
         /**
@@ -883,7 +863,7 @@
                         if(!jump_up&&!jump_left_up&&!jump_right_up)
                         {
                             walk_left = 0;
-                            $('#mario')[0].setAttribute('src',"mario-images/mariol1.gif");
+                            $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
                         }
                         key_up = 1;
                         key_right = 1;
@@ -897,7 +877,7 @@
                         if(!jump_up&&!jump_left_up&&!jump_right_up)
                         {
                             walk_right = 0;
-                            $('#mario')[0].setAttribute('src',"mario-images/marior1.gif");
+                            $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
                         }
                         key_up = 1;
                         key_left = 1;
@@ -912,7 +892,8 @@
 </head>
 <body>
 
-
+<div id="left-curtain"></div>
+<div id="right-curtain"></div>     <!--右边的幕布-->
 <div id="ground"></div>			   <!--地面-->
 
 
@@ -944,39 +925,18 @@
 <div id="hill9">
     <img src="mario-images/tussock2.gif">
 </div>
-<div id="hill10">
-    <img src="mario-images/tussock1.gif">
-</div>
-<div id="hill11">
-    <img src="mario-images/hill1.gif"/>
-</div>
-<div id="hill12">
-    <img src="mario-images/tussock3.gif">
-</div>
-<div id="hill13">
-    <img src="mario-images/hill2.gif">
-</div>
-<div id="hill14">
-    <img src="mario-images/tussock2.gif">
-</div>
-<div id="hill15">
-    <img src="mario-images/hill1.gif">
-</div>
-<div id="hill16">
-    <img src="mario-images/tussock2.gif">
-</div>
+
+
 
 
 <!--墙体-->
 <div id="wall1">
     <img style="float:left;" src="mario-images/cubo.gif">
     <img style="float:left;" src="mario-images/cubo.gif">
-    <img style="float:left;" src="mario-images/cubo.gif">
-    <img style="float:left;" src="mario-images/cubo.gif">
 </div>
 
 <div id="wall2">
-    <img style="float:left;" src="mario-images/signo.gif">
+    <img style="float:left;" src="Surio/project1.gif">
 </div>
 
 <div id="wall3">
@@ -992,20 +952,13 @@
     <img style="float:left;" src="mario-images/cubo.gif">
 </div>
 <div id="wall5">
-    <img style="float:left;" src="mario-images/cubo.gif">
-    <img style="float:left;" src="mario-images/cubo.gif">
-    <img style="float:left;" src="mario-images/cubo.gif">
+
+    <img style="float:left;" src="Surio/project3.gif">
+
 </div>
-<div id="wall6">
-    <img style="float:left;" src="mario-images/cubo.gif">
-    <img style="float:left;" src="mario-images/cubo.gif">
-    <img style="float:left;" src="mario-images/cubo.gif">
-    <img style="float:left;" src="mario-images/cubo.gif">
-    <img style="float:left;" src="mario-images/cubo.gif">
-    <img style="float:left;" src="mario-images/cubo.gif">
-</div>
+
 <div id="wall7">
-    <img src="mario-images/signo.gif">
+    <img src="Surio/project2.gif">
 </div>
 
 
@@ -1031,21 +984,6 @@
 <div id="cloud7">
     <img src="mario-images/cloud1.gif"/>
 </div>
-<div id="cloud8">
-    <img src="mario-images/cloud2.gif"/>
-</div>
-<div id="cloud9">
-    <img src="mario-images/cloud3.gif"/>
-</div>
-<div id="cloud10">
-    <img src="mario-images/cloud1.gif"/>
-</div>
-<div id="cloud11">
-    <img src="mario-images/cloud2.gif"/>
-</div>
-<div id="cloud12">
-    <img src="mario-images/cloud3.gif"/>
-</div>
 
 <!--管道-->
 <div id="sewer1">
@@ -1057,15 +995,7 @@
 <div id="sewer3">
     <img src="mario-images/sewer3.gif"/>
 </div>
-<div id="sewer4">
-    <img src="mario-images/sewer.gif"/>
-</div>
-<div id="sewer5">
-    <img src="mario-images/sewer2.gif"/>
-</div>
-<div id="sewer6">
-    <img src="mario-images/sewer3.gif"/>
-</div>
+
 <div id="sewer7">
     <img src="mario-images/figura9.gif">
 </div>
@@ -1080,7 +1010,7 @@
 
 <!--马里奥-->
 <div id="marios">
-    <img id="mario" src='mario-images/marior1.gif'>
+    <img id="mario" src='Surio/faceright.gif'>
 </div>
 </body>
 </html>

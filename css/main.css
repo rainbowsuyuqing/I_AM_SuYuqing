@@ -1,6 +1,6 @@
 body
 {
-	background-image:url(../images/background.gif);
+	background-color: rgb(150,191,203);
 	margin:0;
 	overflow:hidden;
 }
@@ -12,7 +12,7 @@ body
 	height:520px;
 	z-index: 4;
 	float: left;
-	background-image:url(../images/background.gif);
+	background-color: rgb(150,191,203);
 }
 #right-curtain
 {
@@ -20,7 +20,7 @@ body
 	height:520px;
 	width:428px;
 	left:938px;
-	background-image:url(../images/background.gif);
+	background-color: rgb(150,191,203);
 	z-index: 4;
 }
 #main
@@ -44,8 +44,8 @@ body
 #ground
 {
 	position: absolute;
-	background-image: url(../images/ground.gif);
-	width:4000px;
+	background-image: url(../mario-images/ground.gif);
+	width:2000px;
 	height:50px;
 	top:445px;
 	left:428px;
@@ -66,7 +66,7 @@ body
 	position: absolute;
 	height:105px;
 	top:280px;
-	left:700px;
+	left:645px;
 	z-index: 3;
 }
 #wall3
@@ -380,7 +380,7 @@ body
 {
 	position: absolute;
 	top:285px;
-	left:4078px;
+	left:2100px;
 	z-index: 3;
 }
 
@@ -401,7 +401,7 @@ body
 #mario
 {
 	position: absolute;
-	top: 413px;
+	top: 415px;
 	left:550px;
 	z-index: 3;
 }

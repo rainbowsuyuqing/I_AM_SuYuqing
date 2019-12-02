@@ -55,7 +55,7 @@ body
 #wall1
 {
 	position: absolute;
-	height:105px;
+	height:32px;
 	top:330px;
 	left:526px;
 	z-index: 3;
@@ -64,15 +64,15 @@ body
 #wall2
 {
 	position: absolute;
-	height:105px;
+	height:32px;
 	top:280px;
-	left:645px;
+	left:980px;
 	z-index: 3;
 }
 #wall3
 {
 	position: absolute;
-	height:105px;
+	height:32px;
 	top:250px;
 	left:1220px;
 	z-index: 3;
@@ -80,7 +80,7 @@ body
 #wall4
 {
 	position: absolute;
-	height:105px;
+	height:32px;
 	top:250px;
 	left:1620px;
 	z-index: 3;
@@ -88,7 +88,7 @@ body
 #wall5
 {
 	position: absolute;
-	height:105px;
+	height:32px;
 	top:350px;
 	left:1920px;
 	z-index: 3;
@@ -96,7 +96,7 @@ body
 #wall6
 {
 	position: absolute;
-	height:105px;
+	height:32px;
 	top:250px;
 	left:2100px;
 	z-index: 3;
@@ -104,7 +104,7 @@ body
 #wall7
 {
 	position: absolute;
-	height:105px;
+	height:32px;
 	top:320px;
 	left:1520px;
 	z-index: 3;

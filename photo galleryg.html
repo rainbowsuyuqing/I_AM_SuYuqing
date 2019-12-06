@@ -4,53 +4,9 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
     <title>Title</title>
-    <script>
-        window.onload=function () {
-            window.onkeypress=function (e) {
-                if (e.keyCode===113){
-                    window.location.href="Mario-style-page.html";
-                }
-            }
-        }
-    </script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" onClick="javascript :history.back(-1);"><i class="fa fa-arrow-left" aria-hidden="true">back</i></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="index.html">Homepage</a>
-                    <a class="dropdown-item" href="work.html">General Mode</a>
-                    <a class="dropdown-item" href="Project1.html">Redesign of printers</a>
-                    <a class="dropdown-item" href="Project2.html">PETIME</a>
-                    <a class="dropdown-item" href="Project3.html">UniqueU</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="photo%20gallery.html">Handcrafts</a>
-                </div>
-            </li>
-        </ul>
-        <i class="fa fa-hand-o-right" aria-hidden="true" style="color: white;">Press "Q" to go back to game</i>
-        <button style="background-color: transparent;border-color: transparent" onclick="window.location.href='Mario-style-page.html'"
-                onkeypress="">
-            <img src="./Surio/door.gif" style="float: right" alt="Press Q on keyboard to back to game"></button>
-    </div>
-</nav>
 <header>
     <div class="bg-black collapse" id="navbarHeader" style="">
         <div class="container">
@@ -70,135 +26,185 @@
             </div>
         </div>
     </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                <strong>Album</strong>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
 </header>
 <section class="jumbotron text-center" style="background-image: url(./image/IAM.png);
     background-size: cover;">
-        <h1 class="jumbotron-heading" style="color: white">Handcrafts</h1>
-        <p  style="color: white">There are several earrings designed and made by myself and the last one is a fabric designed and prototyped by me as well. I do hope that you like them.</p>
-        <p>
-            <br>
-        </p>
-
+    <h1 class="jumbotron-heading" style="color: white">Handcrafts</h1>
+    <p  style="color: white">There are several earrings designed and made by myself and the last one is a fabric designed and prototyped by me as well. I do hope that you like them.</p>
+    <p>
+        <br>
+    </p>
+    </div>
 </section>
 
 <div class="album py-5" style="background-color: lightblue">
     <div class="container" style="background-color: lightblue">
         <div class="row">
             <div class="col-md-4">
-                <div class="card  mb-4 shadow-sm" style="height: 95%;">
+                <div class="card  mb-4 shadow-sm" style="height: 95%; background-color: black" >
                     <img src="./image/shouzuo/1.jpg" width="100%"  alt="Forbidden City">
-                       <div class="card-body">
-                        <p class="card-text">Coloured glaze</p>
+                    <div class="card-body">
+                        <p class="card-text" style="color: white;font-size: larger;font-family: Helvetica;">Red rose like cinnabar mole</p>
 
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card  mb-4 shadow-sm" style="height:95%;">
+                <div class="card  mb-4 shadow-sm" style="height:95%;background-color: black">
                     <img src="./image/shouzuo/2.jpg" class="bd-placeholder-img card-img-top" width="100%"  alt="Shanghai Oriental Pearl TV Tower">
                     <div class="card-body">
-                        <p class="card-text">Dino</p>
+                        <p class="card-text"style="color: white;font-size: larger;font-family: Helvetica">Loving your broken body</p>
 
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card  mb-4 shadow-sm" style="height:95%">
-                  <img src="./image/shouzuo/5.jpg" class="bd-placeholder-img card-img-top" width="100%"  alt="Hongyadong">
+                <div class="card  mb-4 shadow-sm" style="height:95%;background-color: black">
+                    <img src="./image/shouzuo/3.jpg" class="bd-placeholder-img card-img-top" width="100%"  alt="Hongyadong">
                     <div class="card-body">
-                        <p class="card-text">Planet</p>
+                        <p class="card-text"style="color: white;font-size: larger;font-family: Helvetica">Dream wedding</p>
 
                     </div>
                 </div>
-        </div>
-            <div class="col-md-4">
-        <div class="card  mb-4 shadow-sm" style="height: 95%;">
-            <img src="./image/shouzuo/4.jpg" class="bd-placeholder-img card-img-top" width="100%"  alt="The terra-cotta warriors museum">
-            <div class="card-body">
-                <p class="card-text">Palace</p>
-
             </div>
-        </div>
-    </div>
             <div class="col-md-4">
-                <div class="card  mb-4 shadow-sm" style="height: 95%">
-                    <img src="./image/shouzuo/3.jpg" class="bd-placeholder-img card-img-top" width="100%"  alt="The Li river">
+                <div class="card  mb-4 shadow-sm" style="height: 95%;background-color: black">
+                    <img src="./image/shouzuo/4.jpg" class="bd-placeholder-img card-img-top" width="100%"  alt="The terra-cotta warriors museum">
                     <div class="card-body">
-                        <p class="card-text">Tooth </p>
+                        <p class="card-text"style="color: white;font-size: larger;font-family: Helvetica">Love is when u wake me up to talk about universe</p>
 
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card mb-4 shadow-sm" style="height: 95%">
+                <div class="card  mb-4 shadow-sm" style="height: 95%;background-color: black">
+                    <img src="./image/shouzuo/5.jpg" class="bd-placeholder-img card-img-top" width="100%"  alt="The Li river">
+                    <div class="card-body">
+                        <p class="card-text"style="color: white;font-size: larger;font-family: Helvetica">In a flash</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm" style="height: 95%;background-color: black">
                     <img src="./image/shouzuo/6.jpg" class="bd-placeholder-img card-img-top" width="100%" alt="Devil city">
                     <div class="card-body">
-                        <p class="card-text">Ballet </p>
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm" style="height: 95%">
-                    <img src="./image/shouzuo/11.jpg" class="bd-placeholder-img card-img-top" width="100%"   alt="Devil city">
-                    <div class="card-body">
-                        <p class="card-text">Angel1</p>
+                        <p class="card-text"style="color: white;font-size: larger;font-family: Helvetica">You are a princess </p>
 
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card mb-4 shadow-sm" style="height: 95%">
-                    <img src="./image/shouzuo/8.jpg" class="bd-placeholder-img card-img-top" width="100%"   alt="Devil city">
-                    <div class="card-body">
-                        <p class="card-text">Angel2 </p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm" style="height: 95%">
-                    <img src="./image/shouzuo/9.jpg" class="bd-placeholder-img card-img-top" width="100%"   alt="Devil city">
-                    <div class="card-body">
-                        <p class="card-text">Body </p>
-
-                    </div>
-                </div>
-            </div>
-        <div class="col-md-4">
-            <div class="card mb-4 shadow-sm" style="height: 95%">
-                <img src="./image/shouzuo/12.jpg" class="bd-placeholder-img card-img-top" width="100%"   alt="Devil city">
-                <div class="card-body">
-                    <p class="card-text"> Rose </p>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-                <div class="card mb-4 shadow-sm" style="height: 95%">
+                <div class="card mb-4 shadow-sm" style="height: 95%;background-color: black">
                     <img src="./image/shouzuo/7.jpg" class="bd-placeholder-img card-img-top" width="100%"   alt="Devil city">
                     <div class="card-body">
-                        <p class="card-text">Pearl </p>
+                        <p class="card-text"style="color: white;font-size: larger;font-family: Helvetica">Dancing day</p>
 
                     </div>
                 </div>
-         </div>
+            </div>
             <div class="col-md-4">
-                <div class="card mb-4 shadow-sm" style="height: 95%">
-                    <img src="./image/shouzuo/20.png" class="bd-placeholder-img card-img-top" width="100%"   alt="Devil city">
+                <div class="card mb-4 shadow-sm" style="height: 95%;background-color: black">
+                    <img src="./image/shouzuo/8.jpg" class="bd-placeholder-img card-img-top" width="100%"   alt="Devil city">
                     <div class="card-body">
-                        <p class="card-text">Autumn </p>
+                        <p class="card-text"style="color: white;font-size: larger;font-family: Helvetica">You are a sweet tooth of me</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm" style="height: 95%;background-color: black">
+                    <img src="./image/shouzuo/9.jpg" class="bd-placeholder-img card-img-top" width="100%"   alt="Devil city">
+                    <div class="card-body">
+                        <p class="card-text"style="color: white;font-size: larger;font-family: Helvetica">Girl with a Pearl Earring</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm" style="height: 95%;background-color: black">
+                    <img src="./image/shouzuo/10.jpg" class="bd-placeholder-img card-img-top" width="100%"   alt="Devil city">
+                    <div class="card-body">
+                        <p class="card-text"style="color: white;font-size: larger;font-family: Helvetica">Angels love daydreaming</p>
+
                     </div>
                 </div>
             </div>
 
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm" style="height: 95%;background-color: black">
+                    <img src="./image/shouzuo/00.jpg" class="bd-placeholder-img card-img-top" width="100%"   alt="Devil city">
+                    <div class="card-body">
+                        <p class="card-text"style="color: white;font-size: larger;font-family: Helvetica">Trapped in the world of desire</p>
 
-            <script src="./jquery-3.3.1.min.js"></script>
-            <!-- Include all compiled plugins (below), or include individual files as needed -->
-            <script src="./popper.min.js"></script>
-            <script src="./bootstrap-4.3.1.js"></script>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm" style="height: 95%;background-color: black">
+                    <img src="./image/shouzuo/20.png" class="bd-placeholder-img card-img-top" width="100%"   alt="Devil city">
+                    <div class="card-body">
+                        <p class="card-text"style="color: white;font-size: larger;font-family: Helvetica">Autumn </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="container" style="margin-top: 80px" >
+                    <hr>
+                    <div class="row">
+
+                        <div class="col-md-4 col-12">
+
+                            <h3 class="text-center">WHO I AM</h3>
+                            <p>My name is Su Yuqing. I like playing guitar, singing, drawing, doing crafts, and all kinds of new and interesting things!</p>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <h3 class="text-center">GET IN TOUCH</h3>
+                            <address class="text-center">
+                                <strong>E-mail：<br></strong>
+                                suyuqingrainbow@outlook.com
+                                <br>
+                                <strong>Phone:<br></strong>
+                                +86 13063626611<br>
+                            </address>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <h3 class="text-center">NEWSLETTER</h3>
+                            <form>
+                                <div class="form-group col-12">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="text-center col-12">
+                <hr>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>WISH YOU HAVE A GOOD LIFE.</p>
+                        </div>
+                    </div>
+                </div>
+                </main>
 </body>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 </html>

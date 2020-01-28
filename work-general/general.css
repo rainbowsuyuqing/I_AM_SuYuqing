@@ -270,6 +270,7 @@ main {
     border-bottom: #eece1a 5px solid; }
 
 .projects {
+Margin-top:2em;
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }

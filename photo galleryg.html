@@ -6,7 +6,21 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
     <title>Title</title>
+ <script>
+      window.onload=function () {
+        window.onkeypress=function (e) {
+          if (e.keyCode===113){
+            window.location.href="index.html";
+          }
+        }
+      }
+    </script>
 </head>
+
+
+
+
+
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -37,6 +51,10 @@
                 </div>
             </li>
         </ul>
+      <i class="fa fa-hand-o-right" aria-hidden="true" style="color: white;">Press "Q" to go back to Home</i>
+      <button style="background-color: transparent;border-color: transparent" onclick="window.location.href='index.html'"
+              onkeypress="">
+        <img src="./Surio/100.gif" style="float: right" alt="Press Q on keyboard to back to Home"></button>
     </div>
 </nav>
 <header>
@@ -180,7 +198,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="section">
                 <div class="container" style="margin-top: 80px" >
                     <hr>

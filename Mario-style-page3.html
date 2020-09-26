@@ -100,21 +100,21 @@
         block[8] = w;           //wall5
         w =
             {
-                left:700,
-                right:860,
+                left:1070,
+                right:1102,
+                up:320,
+                down:352
+            };
+        block[9] = w;           //wall6
+        w =
+            {
+                left:1270,
+                right:1430,
                 up:330,
                 down:362
             };
-        block[9] = w;           //the fort
+        block[10] = w;           //the fort
 
-        w=
-            {
-                left:893,
-                right:993,
-                up:250,
-                down:282
-            };
-        block[10]=w; //invisible wall
 
 
 
@@ -153,6 +153,11 @@
                             }
                         }
                         if(i===9){
+                            if(confirm("Do you want to see xx?")){
+                                window.location.href="#";
+                            }
+                        }
+                        if(i===10){
                             if(confirm('Do you want to see my handcrafts?'))
                                 window.location.href="./photo galleryg.html";
                         }
@@ -960,6 +965,11 @@
     <img style="float:left;" src="mario-images/cubo.gif">
 </div>
 <div id="wall5">
+
+    <img style="float:left;" src="Surio/project3.gif">
+
+</div>
+<div id="wall6">
 
     <img style="float:left;" src="Surio/project3.gif">
 

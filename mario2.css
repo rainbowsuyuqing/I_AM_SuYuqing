@@ -47,7 +47,7 @@ body
 {
 	position: absolute;
 	background-image: url(./mario-images/ground.gif);
-	width:2000px;
+	width:3200px;
 	height:50px;
 	top:445px;
 	left:-472px;
@@ -99,8 +99,8 @@ body
 {
 	position: absolute;
 	height:32px;
-	top:250px;
-	left:1200px;
+	top:320px;
+	left:1570px;
 	z-index: 3;
 }
 #wall7
@@ -382,7 +382,7 @@ body
 {
 	position: absolute;
 	top:285px;
-	left:1200px;
+	left:1770px;
 	z-index: 3;
 }
 

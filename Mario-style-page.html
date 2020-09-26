@@ -92,20 +92,30 @@
         block[7] = w;           //wall7
         w =
             {
-                left:1920,
-                right:1952,
+                left:1750,
+                right:1782,
                 up:350,
                 down:382
             };
         block[8] = w;           //wall5
+        /*****************************/
         w =
             {
-                left:2100,
-                right:2260,
+                left:2300,
+                right:2332,
+                up:320,
+                down:352
+            };                  //wall6
+        block[9] =w;
+       /***************************************/
+        w =
+            {
+                left:2500,
+                right:2660,
                 up:330,
                 down:362
             };
-        block[9] = w;           //the fort
+        block[10] = w;           //the fort
 
         w=
             {
@@ -114,7 +124,7 @@
                 up:250,
                 down:282
             };
-        block[10]=w; //invisible wall
+        block[11]=w; //invisible wall
 
 
 
@@ -153,6 +163,10 @@
                             }
                         }
                         if(i===9){
+                            if(confirm('Do you want to see my handcrafts?'))
+                                window.location.href="#";
+                        }
+                        if(i===10){
                             if(confirm('Do you want to see my handcrafts?'))
                                 window.location.href="./photo galleryg.html";
                         }
@@ -963,6 +977,10 @@
 
     <img style="float:left;" src="Surio/project3.gif">
 
+</div>
+
+<div id="wall6">
+    <img style="float:left;" src="Surio/project3.gif">
 </div>
 
 <div id="wall7">

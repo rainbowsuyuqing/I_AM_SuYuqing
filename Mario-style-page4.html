@@ -6,7 +6,7 @@
     <meta name="author" content="Su Yuqing">
     <title>Rainbow's portfolio</title>
     <script type="text/javascript" src="./jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./mario4.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
     <script type="text/javascript">
         var up=38, left=37 , right=39;                                   //三个按键
@@ -27,8 +27,8 @@
 
         var w=
             {
-                left:526,
-                right:590,
+                left:-1374,
+                right:-1810,
                 up:330,
                 down:362
             };
@@ -36,95 +36,86 @@
         block[0] = w;        //wall1
         w =
             {
-                left:778,
-                right:844,
+                left:-1122,
+                right:-1056,
                 up:382,
                 down:445
             };
         block[1] = w;       //sewer1
         w =
             {
-                left:980,
-                right:1012,
+                left:-920,
+                right:-888,
                 up:280,
                 down:312
             };
         block[2] = w;     //wall2
         w =
             {
-                left:1078,
-                right:1144,
+                left:-822,
+                right:-756,
                 up:349,
                 down:445
             };
         block[3] = w;        //sewer2
         w =
             {
-                left:1378,
-                right:1443,
+                left:-522,
+                right:-456,
                 up:318,
                 down:445
             };
         block[4] = w;          //sewer3
         w =
             {
-                left:1220,
-                right:1316,
+                left:-680,
+                right:-584,
                 up:250,
                 down:282
             };
         block[5] = w;           //wall3
         w =
             {
-                left:1620,
-                right:1748,
+                left:-280,
+                right:-152,
                 up:250,
                 down:282
             };
         block[6] = w;           //wall4
         w =
             {
-                left:1520,
-                right:1552,
+                left:-380,
+                right:-358,
                 up:320,
                 down:352
             };
         block[7] = w;           //wall7
         w =
             {
-                left:1920,
-                right:1952,
+                left:20,
+                right:52,
                 up:350,
                 down:382
             };
         block[8] = w;           //wall5
-        /*****************************/
         w =
             {
-                left:2420,
-                right:2452,
+                left:570,
+                right:602,
                 up:320,
                 down:352
-            };                  //wall6
-        block[9] =w;
-       /***************************************/
+            };
+        block[9] = w;           //wall6
         w =
             {
-                left:2500,
-                right:2660,
+                left:770,
+                right:930,
                 up:330,
                 down:362
             };
         block[10] = w;           //the fort
 
-        w=
-            {
-                left:2293,
-                right:2393,
-                up:250,
-                down:282
-            };
-        block[11]=w; //invisible wall
+
 
 
 
@@ -150,7 +141,7 @@
                         if(i===2) {
 
                             if(confirm('Do you want to see Break The Box page?')){
-                            window.location.href = "BreakTheBoxG.html";}
+                                window.location.href = "BreakTheBoxG.html";}
 
                         }
                         if(i===7) {
@@ -163,9 +154,11 @@
                             }
                         }
                         if(i===9){
-                            if(confirm('Do you want to see UniqueU page?'))
+                            if(confirm("Do you want to see UniqueU page?")){
                                 window.location.href="UniqueUG.html";
+                            }
                         }
+
                         if(i===10){
                             if(confirm('Do you want to see my handcrafts?'))
                                 window.location.href="./photo galleryg.html";
@@ -253,12 +246,12 @@
                 if(facing)
                 {
 
-                    $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
 
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
                 }
                 falldown = 0;
                 walk_left = 0;
@@ -275,11 +268,11 @@
                 $('#mario').css({"top":groundEdge+'px'});
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
                 }
                 falldown = 0;
                 walk_left = 0;
@@ -304,11 +297,11 @@
                     $('#mario').css({"top":block[k-1].up-mario_height+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
                     }
                     jump_up = 0;
                     key_right_up = 1;
@@ -336,11 +329,11 @@
                     $('#mario').css({"top":groundEdge+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
                     }
                     jump_up = 0;
                     key_right_up = 1;
@@ -368,11 +361,11 @@
                     $('#mario').css({"top":block[k-1].up-mario_height+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
                     }
                     jump_left_up = 0;
                     v0_y = 24;
@@ -402,11 +395,11 @@
                     $('#mario').css({"top":groundEdge+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
                     }
                     jump_left_up = 0;
                     v0_y = 24;
@@ -432,11 +425,11 @@
                     $('#mario').css({"top":block[k-1].up-mario_height+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
                     }
                     jump_right_up = 0;
                     v0_y = 24;
@@ -499,11 +492,11 @@
                     $('#mario').css({"top":groundEdge+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
                     }
                     jump_right_up = 0;
                     v0_y = 24;
@@ -528,11 +521,11 @@
                 id2 = setInterval("jump_leftup()",30);
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/RightJump.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/RightJump2.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/LeftJump.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/LeftJump2.gif");
                 }
                 jump_left_up = 1;
 
@@ -555,11 +548,11 @@
                 id3 = setInterval("jump_rightup()",30);
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/RightJump.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/RightJump2.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/LeftJump.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/LeftJump2.gif");
                 }
                 jump_right_up = 1;
             }
@@ -583,11 +576,11 @@
                 key_left_up = 0;
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/RightJump.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/RightJump2.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/LeftJump.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/LeftJump2.gif");
                 }
                 jump_up = 1;
             }
@@ -607,7 +600,7 @@
                 facing = 0;
                 if(walk_left==0&&!jump_up)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/walkleft.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/walkleft2.gif");
                     walk_left = 1;
                 }
                 var horizontal=parseInt($('#mario').css("left"));
@@ -620,29 +613,29 @@
                     }
                     else {
 
-                            $('#ground').css({'left': parseInt($('#ground').css('left')) + v0_x + 'px'});
-                            for (var i = 1; i <= tot_wall; i++) {
-                                $('#wall' + i).css({"left": parseInt($('#wall' + i).css("left")) + v0_x + 'px'});
-                            }
-                            for (var i = 1; i <= tot_cloud; i++) {
-                                $('#cloud' + i).css({"left": parseInt($('#cloud' + i).css("left")) + v0_x + 'px'});
-                            }
-                            for (var i = 1; i <= tot_hill; i++) {
-                                $('#hill' + i).css({"left": parseInt($('#hill' + i).css("left")) + v0_x + 'px'});
-                            }
-                            for (var i = 1; i <= tot_sewer; i++) {
-                                $('#sewer' + i).css({"left": parseInt($('#sewer' + i).css("left")) + v0_x + 'px'});
-                            }
-                            for (var i = 1; i <= tot_monster; i++) {
-                                $('#monster' + i).css({"left": parseInt($('#monster' + i).css("left")) + v0_x + 'px'});
-                            }
-                            for (var i = 0; i < block.length; i++) {
-                                block[i].left = block[i].left + v0_x;
-                                block[i].right = block[i].right + v0_x;
-                            }
+                        $('#ground').css({'left': parseInt($('#ground').css('left')) + v0_x + 'px'});
+                        for (var i = 1; i <= tot_wall; i++) {
+                            $('#wall' + i).css({"left": parseInt($('#wall' + i).css("left")) + v0_x + 'px'});
+                        }
+                        for (var i = 1; i <= tot_cloud; i++) {
+                            $('#cloud' + i).css({"left": parseInt($('#cloud' + i).css("left")) + v0_x + 'px'});
+                        }
+                        for (var i = 1; i <= tot_hill; i++) {
+                            $('#hill' + i).css({"left": parseInt($('#hill' + i).css("left")) + v0_x + 'px'});
+                        }
+                        for (var i = 1; i <= tot_sewer; i++) {
+                            $('#sewer' + i).css({"left": parseInt($('#sewer' + i).css("left")) + v0_x + 'px'});
+                        }
+                        for (var i = 1; i <= tot_monster; i++) {
+                            $('#monster' + i).css({"left": parseInt($('#monster' + i).css("left")) + v0_x + 'px'});
+                        }
+                        for (var i = 0; i < block.length; i++) {
+                            block[i].left = block[i].left + v0_x;
+                            block[i].right = block[i].right + v0_x;
                         }
                     }
                 }
+            }
             if(!falldown&&!jump_up&&!jump_left_up&&!jump_right_up&&parseInt($('#mario').css("top"))<groundEdge)
             {
                 var k = checkdown(parseInt($('#mario').css("left")),parseInt($('#mario').css("top"))+2);
@@ -669,7 +662,7 @@
                 facing = 1;
                 if(walk_right==0&&!jump_up)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/walkright.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/walkright2.gif");
                     walk_right = 1;
                 }
                 var horizontal=parseInt($('#mario').css("left"));
@@ -881,7 +874,7 @@
                         if(!jump_up&&!jump_left_up&&!jump_right_up)
                         {
                             walk_left = 0;
-                            $('#mario')[0].setAttribute('src',"Surio/faceleft.gif");
+                            $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
                         }
                         key_up = 1;
                         key_right = 1;
@@ -895,7 +888,7 @@
                         if(!jump_up&&!jump_left_up&&!jump_right_up)
                         {
                             walk_right = 0;
-                            $('#mario')[0].setAttribute('src',"Surio/faceright.gif");
+                            $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
                         }
                         key_up = 1;
                         key_left = 1;
@@ -978,9 +971,10 @@
     <img style="float:left;" src="Surio/project3.gif">
 
 </div>
-
 <div id="wall6">
+
     <img style="float:left;" src="Surio/project3.gif">
+
 </div>
 
 <div id="wall7">
@@ -1030,13 +1024,11 @@
 <div id="monster1">
     <img src="mario-images/bicho.gif"/>
 </div>
-<div id="monster2">
-    <img src="mario-images/tortuga1.gif"/>
-</div>
+
 
 <!--马里奥-->
 <div id="marios">
-    <img id="mario" src='Surio/faceright.gif'>
+    <img id="mario" src='Surio/faceright1.gif'>
 </div>
 </body>
 </html>

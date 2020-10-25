@@ -4,6 +4,8 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+
 #menu-wrapper {
   position: relative;
   display: block;
@@ -9979,7 +9981,7 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #6c757d !important;
+  color: #ffc107 !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {

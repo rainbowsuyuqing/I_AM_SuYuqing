@@ -27,8 +27,8 @@
 
         var w=
             {
-                left:-1374,
-                right:-1810,
+                left:-1174,
+                right:-1110,
                 up:330,
                 down:362
             };
@@ -36,87 +36,87 @@
         block[0] = w;        //wall1
         w =
             {
-                left:-1122,
-                right:-1056,
+                left:-922,
+                right:-856,
                 up:382,
                 down:445
             };
         block[1] = w;       //sewer1
         w =
             {
-                left:-920,
-                right:-888,
+                left:-720,
+                right:-688,
                 up:280,
                 down:312
             };
         block[2] = w;     //wall2
         w =
             {
-                left:-822,
-                right:-756,
+                left:-622,
+                right:-556,
                 up:349,
                 down:445
             };
         block[3] = w;        //sewer2
         w =
             {
-                left:-522,
-                right:-456,
+                left:-322,
+                right:-256,
                 up:318,
                 down:445
             };
         block[4] = w;          //sewer3
         w =
             {
-                left:-680,
-                right:-584,
+                left:-480,
+                right:-384,
                 up:250,
                 down:282
             };
         block[5] = w;           //wall3
         w =
             {
-                left:-280,
-                right:-152,
+                left:-80,
+                right:48,
                 up:250,
                 down:282
             };
         block[6] = w;           //wall4
         w =
             {
-                left:-380,
-                right:-358,
+                left:-180,
+                right:-158,
                 up:320,
                 down:352
             };
         block[7] = w;           //wall7
         w =
             {
-                left:20,
-                right:52,
+                left:220,
+                right:252,
                 up:350,
                 down:382
             };
         block[8] = w;           //wall5
         w =
             {
-                left:570,
-                right:602,
+                left:770,
+                right:802,
                 up:320,
                 down:352
             };
         block[9] = w;           //wall6
         w={
-            left:320,
-            right:352,
+            left:520,
+            right:552,
             up:320,
             down:352
         };
         block[10]=w;    //wall8
         w =
             {
-                left:770,
-                right:930,
+                left:970,
+                right:1130,
                 up:330,
                 down:362
             };
@@ -147,29 +147,26 @@
                     {
                         if(i===2) {
 
-                            if(confirm('Do you want to see Break The Box page?')){
+                            if(confirm('Do you want to see Break The Box (Platformer Game) page?')){
                                 window.location.href = "BreakTheBoxG.html";}
 
                         }
-
                         if(i===7) {
-                            if(confirm('Do you want to see Watch Face page?')){
-                                window.location.href = "WatchFaceG.html";}
+                            if(confirm('Do you want to see Haunted House (VR Game) page?')){
+                                window.location.href = "VRG.html";}
                         }
                         if(i===8){
-                            if(confirm("Do you want to see PETIME page?")){
-                                window.location.href="PETIMEG.html";
-                            }
-                        }
-                        if(i===9){
-                            if(confirm("Do you want to see UniqueU page?")){
-                                window.location.href="UniqueUG.html";
+                            if(confirm("Do you want to see Watch Face page?")){
+                                window.location.href="WatchFaceG.html";
                             }
                         }
                         if(i===10){
-                            if(confirm("Do you want to see XXX")){
+                            if(confirm('Do you want to see PETIME page?'))
+                                window.location.href="PETIMEG.html";
+                        }
+                        if(i===9){
+                            if(confirm('Do you want to see UniqueU page?'))
                                 window.location.href="UniqueUG.html";
-                            }
                         }
 
                         if(i===11){
@@ -259,12 +256,12 @@
                 if(facing)
                 {
 
-                    $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceright4.gif");
 
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceleft4.gif");
                 }
                 falldown = 0;
                 walk_left = 0;
@@ -281,11 +278,11 @@
                 $('#mario').css({"top":groundEdge+'px'});
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceright4.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceleft4.gif");
                 }
                 falldown = 0;
                 walk_left = 0;
@@ -310,11 +307,11 @@
                     $('#mario').css({"top":block[k-1].up-mario_height+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright4.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft4.gif");
                     }
                     jump_up = 0;
                     key_right_up = 1;
@@ -342,11 +339,11 @@
                     $('#mario').css({"top":groundEdge+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright4.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft4.gif");
                     }
                     jump_up = 0;
                     key_right_up = 1;
@@ -374,11 +371,11 @@
                     $('#mario').css({"top":block[k-1].up-mario_height+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright4.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft4.gif");
                     }
                     jump_left_up = 0;
                     v0_y = 24;
@@ -408,11 +405,11 @@
                     $('#mario').css({"top":groundEdge+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright4.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft4.gif");
                     }
                     jump_left_up = 0;
                     v0_y = 24;
@@ -438,11 +435,11 @@
                     $('#mario').css({"top":block[k-1].up-mario_height+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright4.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft4.gif");
                     }
                     jump_right_up = 0;
                     v0_y = 24;
@@ -505,11 +502,11 @@
                     $('#mario').css({"top":groundEdge+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright4.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft4.gif");
                     }
                     jump_right_up = 0;
                     v0_y = 24;
@@ -534,11 +531,11 @@
                 id2 = setInterval("jump_leftup()",30);
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/RightJump2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/RightJump4.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/LeftJump2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/LeftJump4.gif");
                 }
                 jump_left_up = 1;
 
@@ -561,11 +558,11 @@
                 id3 = setInterval("jump_rightup()",30);
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/RightJump2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/RightJump4.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/LeftJump2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/LeftJump4.gif");
                 }
                 jump_right_up = 1;
             }
@@ -589,11 +586,11 @@
                 key_left_up = 0;
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/RightJump2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/RightJump4.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/LeftJump2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/LeftJump4.gif");
                 }
                 jump_up = 1;
             }
@@ -613,7 +610,7 @@
                 facing = 0;
                 if(walk_left==0&&!jump_up)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/walkleft2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/walkleft4.gif");
                     walk_left = 1;
                 }
                 var horizontal=parseInt($('#mario').css("left"));
@@ -675,7 +672,7 @@
                 facing = 1;
                 if(walk_right==0&&!jump_up)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/walkright2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/walkright4.gif");
                     walk_right = 1;
                 }
                 var horizontal=parseInt($('#mario').css("left"));
@@ -887,7 +884,7 @@
                         if(!jump_up&&!jump_left_up&&!jump_right_up)
                         {
                             walk_left = 0;
-                            $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                            $('#mario')[0].setAttribute('src',"Surio/faceleft4.gif");
                         }
                         key_up = 1;
                         key_right = 1;
@@ -901,7 +898,7 @@
                         if(!jump_up&&!jump_left_up&&!jump_right_up)
                         {
                             walk_right = 0;
-                            $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                            $('#mario')[0].setAttribute('src',"Surio/faceright4.gif");
                         }
                         key_up = 1;
                         key_left = 1;
@@ -964,7 +961,7 @@
 </div>
 
 <div id="wall2">
-    <img style="float:left;" src="Surio/project1.gif">
+    <img style="float:left;" src="Surio/project1.png">
 </div>
 
 <div id="wall3">
@@ -981,21 +978,20 @@
 </div>
 <div id="wall5">
 
-    <img style="float:left;" src="Surio/project3.gif">
+    <img style="float:left;" src="Surio/project3.png">
 
 </div>
+
 <div id="wall6">
-
-    <img style="float:left;" src="Surio/project3.gif">
-
+    <img style="float:left;" src="Surio/project5.png">
 </div>
 
 <div id="wall7">
-    <img style="float:left;" src="Surio/project2.gif">
+    <img style="float:left;" src="Surio/project2.png">
 </div>
 
 <div id="wall8">
-    <img style="float:left;" src="Surio/project1.gif">
+    <img style="float:left;" src="Surio/project4.png">
 </div>
 
 <!--云朵-->
@@ -1044,7 +1040,7 @@
 
 <!--马里奥-->
 <div id="marios">
-    <img id="mario" src='Surio/faceright1.gif'>
+    <img id="mario" src='Surio/faceright4.gif'>
 </div>
 </body>
 </html>

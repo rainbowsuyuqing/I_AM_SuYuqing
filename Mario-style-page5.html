@@ -6,7 +6,7 @@
     <meta name="author" content="Su Yuqing">
     <title>Rainbow's portfolio</title>
     <script type="text/javascript" src="./jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./mario2.css">
+    <link rel="stylesheet" type="text/css" href="./mario4.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
     <script type="text/javascript">
         var up=38, left=37 , right=39;                                   //三个按键
@@ -27,8 +27,8 @@
 
         var w=
             {
-                left:126,
-                right:-310,
+                left:-1624,
+                right:-2060,
                 up:330,
                 down:362
             };
@@ -36,90 +36,88 @@
         block[0] = w;        //wall1
         w =
             {
-                left:-122,
-                right:-56,
+                left:-1372,
+                right:-1306,
                 up:382,
                 down:445
             };
         block[1] = w;       //sewer1
         w =
             {
-                left:80,
-                right:112,
+                left:-1170,
+                right:-1138,
                 up:280,
                 down:312
             };
         block[2] = w;     //wall2
         w =
             {
-                left:178,
-                right:244,
+                left:-1072,
+                right:-1006,
                 up:349,
                 down:445
             };
         block[3] = w;        //sewer2
         w =
             {
-                left:478,
-                right:543,
+                left:-772,
+                right:-706,
                 up:318,
                 down:445
             };
         block[4] = w;          //sewer3
         w =
             {
-                left:320,
-                right:416,
+                left:-930,
+                right:-834,
                 up:250,
                 down:282
             };
         block[5] = w;           //wall3
         w =
             {
-                left:720,
-                right:848,
+                left:-530,
+                right:-402,
                 up:250,
                 down:282
             };
         block[6] = w;           //wall4
         w =
             {
-                left:620,
-                right:652,
+                left:-630,
+                right:-608,
                 up:320,
                 down:352
             };
         block[7] = w;           //wall7
         w =
             {
-                left:1020,
-                right:1052,
+                left:-230,
+                right:-198,
                 up:350,
                 down:382
             };
         block[8] = w;           //wall5
-        /*********************************/
         w =
             {
-                left:1570,
-                right:1602,
+                left:320,
+                right:352,
                 up:320,
                 down:352
             };
         block[9] = w;           //wall6
-        /**********************************/
-        w={
-            left:1320,
-            right:1352,
-            up:320,
-            down:352
-        };
-        block[10]=w;
-        /**********************************/
+        w=
+            {
+                left: 320,
+                right: 352,
+                up: 320,
+                down: 352
+            };
+        block[10]=w; //wall10
         w =
             {
-                left:1770,
-                right:1930,
+                left:520,
+                right:680,
                 up:330,
                 down:362
             };
@@ -164,12 +162,14 @@
                             }
                         }
                         if(i===9){
-                            if(confirm('Do you want to see UniqueU page?'))
+                            if(confirm("Do you want to see UniqueU page?")){
                                 window.location.href="UniqueUG.html";
+                            }
                         }
                         if(i===10){
-                            if(confirm('Do you want to see XXX?'))
+                            if(confirm("Do you want to see XXX?")){
                                 window.location.href="UniqueUG.html";
+                            }
                         }
 
                         if(i===11){
@@ -626,29 +626,29 @@
                     }
                     else {
 
-                            $('#ground').css({'left': parseInt($('#ground').css('left')) + v0_x + 'px'});
-                            for (var i = 1; i <= tot_wall; i++) {
-                                $('#wall' + i).css({"left": parseInt($('#wall' + i).css("left")) + v0_x + 'px'});
-                            }
-                            for (var i = 1; i <= tot_cloud; i++) {
-                                $('#cloud' + i).css({"left": parseInt($('#cloud' + i).css("left")) + v0_x + 'px'});
-                            }
-                            for (var i = 1; i <= tot_hill; i++) {
-                                $('#hill' + i).css({"left": parseInt($('#hill' + i).css("left")) + v0_x + 'px'});
-                            }
-                            for (var i = 1; i <= tot_sewer; i++) {
-                                $('#sewer' + i).css({"left": parseInt($('#sewer' + i).css("left")) + v0_x + 'px'});
-                            }
-                            for (var i = 1; i <= tot_monster; i++) {
-                                $('#monster' + i).css({"left": parseInt($('#monster' + i).css("left")) + v0_x + 'px'});
-                            }
-                            for (var i = 0; i < block.length; i++) {
-                                block[i].left = block[i].left + v0_x;
-                                block[i].right = block[i].right + v0_x;
-                            }
+                        $('#ground').css({'left': parseInt($('#ground').css('left')) + v0_x + 'px'});
+                        for (var i = 1; i <= tot_wall; i++) {
+                            $('#wall' + i).css({"left": parseInt($('#wall' + i).css("left")) + v0_x + 'px'});
+                        }
+                        for (var i = 1; i <= tot_cloud; i++) {
+                            $('#cloud' + i).css({"left": parseInt($('#cloud' + i).css("left")) + v0_x + 'px'});
+                        }
+                        for (var i = 1; i <= tot_hill; i++) {
+                            $('#hill' + i).css({"left": parseInt($('#hill' + i).css("left")) + v0_x + 'px'});
+                        }
+                        for (var i = 1; i <= tot_sewer; i++) {
+                            $('#sewer' + i).css({"left": parseInt($('#sewer' + i).css("left")) + v0_x + 'px'});
+                        }
+                        for (var i = 1; i <= tot_monster; i++) {
+                            $('#monster' + i).css({"left": parseInt($('#monster' + i).css("left")) + v0_x + 'px'});
+                        }
+                        for (var i = 0; i < block.length; i++) {
+                            block[i].left = block[i].left + v0_x;
+                            block[i].right = block[i].right + v0_x;
                         }
                     }
                 }
+            }
             if(!falldown&&!jump_up&&!jump_left_up&&!jump_right_up&&parseInt($('#mario').css("top"))<groundEdge)
             {
                 var k = checkdown(parseInt($('#mario').css("left")),parseInt($('#mario').css("top"))+2);

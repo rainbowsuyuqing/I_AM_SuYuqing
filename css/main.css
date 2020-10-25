@@ -109,6 +109,14 @@ body
 	left:1520px;
 	z-index: 3;
 }
+#wall8
+{
+	position: absolute;
+	height:32px;
+	top:320px;
+	left:2220px;
+	z-index: 3;
+}
 #hill1
 {
 	position: absolute;

@@ -6,7 +6,7 @@
     <meta name="author" content="Su Yuqing">
     <title>Rainbow's portfolio</title>
     <script type="text/javascript" src="./jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./mario2.css">
+    <link rel="stylesheet" type="text/css" href="./mario5.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
     <script type="text/javascript">
         var up=38, left=37 , right=39;                                   //三个按键
@@ -27,8 +27,8 @@
 
         var w=
             {
-                left:126,
-                right:-310,
+                left:-1374,
+                right:-1310,
                 up:330,
                 down:362
             };
@@ -36,90 +36,93 @@
         block[0] = w;        //wall1
         w =
             {
-                left:-122,
-                right:-56,
+                left:-1122,
+                right:-1056,
                 up:382,
                 down:445
             };
         block[1] = w;       //sewer1
         w =
             {
-                left:80,
-                right:112,
+                left:-920,
+                right:-888,
                 up:280,
                 down:312
             };
         block[2] = w;     //wall2
         w =
             {
-                left:178,
-                right:244,
+                left:-822,
+                right:-756,
                 up:349,
                 down:445
             };
         block[3] = w;        //sewer2
         w =
             {
-                left:478,
-                right:543,
+                left:-522,
+                right:-456,
                 up:318,
                 down:445
             };
         block[4] = w;          //sewer3
         w =
             {
-                left:320,
-                right:416,
+                left:-680,
+                right:-584,
                 up:250,
                 down:282
             };
         block[5] = w;           //wall3
         w =
             {
-                left:720,
-                right:848,
+                left:-280,
+                right:-152,
                 up:250,
                 down:282
             };
         block[6] = w;           //wall4
+    /*************************************/
         w =
             {
-                left:620,
-                right:652,
+                left:-380,
+                right:-352,
                 up:320,
                 down:352
             };
         block[7] = w;           //wall7
+       /********************************/
         w =
             {
-                left:1020,
-                right:1052,
-                up:350,
-                down:382
+                left:-380,
+                right:-348,
+                up:20,
+                down:52
             };
         block[8] = w;           //wall5
-        /*********************************/
+        /***********************************/
         w =
             {
-                left:1570,
-                right:1602,
+                left:570,
+                right:602,
                 up:320,
                 down:352
             };
         block[9] = w;           //wall6
-        /**********************************/
-        w={
-            left:1320,
-            right:1352,
-            up:320,
-            down:352
-        };
-        block[10]=w;
-        /**********************************/
+       /**************************************/
+        w=
+            {
+                left: 320,
+                right: 352,
+                up: 320,
+                down: 352
+            };
+        block[10]=w; //wall8
+        /*******************************************/
         w =
             {
-                left:1770,
-                right:1930,
+                left:770,
+                right:930,
                 up:330,
                 down:362
             };
@@ -259,12 +262,12 @@
                 if(facing)
                 {
 
-                    $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceright5.gif");
 
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceleft5.gif");
                 }
                 falldown = 0;
                 walk_left = 0;
@@ -281,11 +284,11 @@
                 $('#mario').css({"top":groundEdge+'px'});
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceright5.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/faceleft5.gif");
                 }
                 falldown = 0;
                 walk_left = 0;
@@ -310,11 +313,11 @@
                     $('#mario').css({"top":block[k-1].up-mario_height+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright5.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft5.gif");
                     }
                     jump_up = 0;
                     key_right_up = 1;
@@ -342,11 +345,11 @@
                     $('#mario').css({"top":groundEdge+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright5.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft5.gif");
                     }
                     jump_up = 0;
                     key_right_up = 1;
@@ -374,11 +377,11 @@
                     $('#mario').css({"top":block[k-1].up-mario_height+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright5.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft5.gif");
                     }
                     jump_left_up = 0;
                     v0_y = 24;
@@ -408,11 +411,11 @@
                     $('#mario').css({"top":groundEdge+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright5.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft5.gif");
                     }
                     jump_left_up = 0;
                     v0_y = 24;
@@ -438,11 +441,11 @@
                     $('#mario').css({"top":block[k-1].up-mario_height+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright5.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft5.gif");
                     }
                     jump_right_up = 0;
                     v0_y = 24;
@@ -505,11 +508,11 @@
                     $('#mario').css({"top":groundEdge+'px'});
                     if(facing)
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceright5.gif");
                     }
                     else
                     {
-                        $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                        $('#mario')[0].setAttribute('src',"Surio/faceleft5.gif");
                     }
                     jump_right_up = 0;
                     v0_y = 24;
@@ -534,11 +537,11 @@
                 id2 = setInterval("jump_leftup()",30);
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/RightJump2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/RightJump5.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/LeftJump2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/LeftJump5.gif");
                 }
                 jump_left_up = 1;
 
@@ -561,11 +564,11 @@
                 id3 = setInterval("jump_rightup()",30);
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/RightJump2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/RightJump5.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/LeftJump2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/LeftJump5.gif");
                 }
                 jump_right_up = 1;
             }
@@ -589,11 +592,11 @@
                 key_left_up = 0;
                 if(facing)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/RightJump2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/RightJump5.gif");
                 }
                 else
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/LeftJump2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/LeftJump5.gif");
                 }
                 jump_up = 1;
             }
@@ -613,7 +616,7 @@
                 facing = 0;
                 if(walk_left==0&&!jump_up)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/walkleft2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/walkleft5.gif");
                     walk_left = 1;
                 }
                 var horizontal=parseInt($('#mario').css("left"));
@@ -626,29 +629,29 @@
                     }
                     else {
 
-                            $('#ground').css({'left': parseInt($('#ground').css('left')) + v0_x + 'px'});
-                            for (var i = 1; i <= tot_wall; i++) {
-                                $('#wall' + i).css({"left": parseInt($('#wall' + i).css("left")) + v0_x + 'px'});
-                            }
-                            for (var i = 1; i <= tot_cloud; i++) {
-                                $('#cloud' + i).css({"left": parseInt($('#cloud' + i).css("left")) + v0_x + 'px'});
-                            }
-                            for (var i = 1; i <= tot_hill; i++) {
-                                $('#hill' + i).css({"left": parseInt($('#hill' + i).css("left")) + v0_x + 'px'});
-                            }
-                            for (var i = 1; i <= tot_sewer; i++) {
-                                $('#sewer' + i).css({"left": parseInt($('#sewer' + i).css("left")) + v0_x + 'px'});
-                            }
-                            for (var i = 1; i <= tot_monster; i++) {
-                                $('#monster' + i).css({"left": parseInt($('#monster' + i).css("left")) + v0_x + 'px'});
-                            }
-                            for (var i = 0; i < block.length; i++) {
-                                block[i].left = block[i].left + v0_x;
-                                block[i].right = block[i].right + v0_x;
-                            }
+                        $('#ground').css({'left': parseInt($('#ground').css('left')) + v0_x + 'px'});
+                        for (var i = 1; i <= tot_wall; i++) {
+                            $('#wall' + i).css({"left": parseInt($('#wall' + i).css("left")) + v0_x + 'px'});
+                        }
+                        for (var i = 1; i <= tot_cloud; i++) {
+                            $('#cloud' + i).css({"left": parseInt($('#cloud' + i).css("left")) + v0_x + 'px'});
+                        }
+                        for (var i = 1; i <= tot_hill; i++) {
+                            $('#hill' + i).css({"left": parseInt($('#hill' + i).css("left")) + v0_x + 'px'});
+                        }
+                        for (var i = 1; i <= tot_sewer; i++) {
+                            $('#sewer' + i).css({"left": parseInt($('#sewer' + i).css("left")) + v0_x + 'px'});
+                        }
+                        for (var i = 1; i <= tot_monster; i++) {
+                            $('#monster' + i).css({"left": parseInt($('#monster' + i).css("left")) + v0_x + 'px'});
+                        }
+                        for (var i = 0; i < block.length; i++) {
+                            block[i].left = block[i].left + v0_x;
+                            block[i].right = block[i].right + v0_x;
                         }
                     }
                 }
+            }
             if(!falldown&&!jump_up&&!jump_left_up&&!jump_right_up&&parseInt($('#mario').css("top"))<groundEdge)
             {
                 var k = checkdown(parseInt($('#mario').css("left")),parseInt($('#mario').css("top"))+2);
@@ -675,7 +678,7 @@
                 facing = 1;
                 if(walk_right==0&&!jump_up)
                 {
-                    $('#mario')[0].setAttribute('src',"Surio/walkright2.gif");
+                    $('#mario')[0].setAttribute('src',"Surio/walkright5.gif");
                     walk_right = 1;
                 }
                 var horizontal=parseInt($('#mario').css("left"));
@@ -887,7 +890,7 @@
                         if(!jump_up&&!jump_left_up&&!jump_right_up)
                         {
                             walk_left = 0;
-                            $('#mario')[0].setAttribute('src',"Surio/faceleft2.gif");
+                            $('#mario')[0].setAttribute('src',"Surio/faceleft5.gif");
                         }
                         key_up = 1;
                         key_right = 1;
@@ -901,7 +904,7 @@
                         if(!jump_up&&!jump_left_up&&!jump_right_up)
                         {
                             walk_right = 0;
-                            $('#mario')[0].setAttribute('src',"Surio/faceright2.gif");
+                            $('#mario')[0].setAttribute('src',"Surio/faceright5.gif");
                         }
                         key_up = 1;
                         key_left = 1;
@@ -997,6 +1000,7 @@
     <img style="float:left;" src="Surio/project4.png">
 </div>
 
+
 <!--云朵-->
 <div id="cloud1">
     <img src="mario-images/cloud1.gif"/>
@@ -1043,7 +1047,7 @@
 
 <!--马里奥-->
 <div id="marios">
-    <img id="mario" src='Surio/faceright1.gif'>
+    <img id="mario" src='Surio/faceright5.gif'>
 </div>
 </body>
 </html>

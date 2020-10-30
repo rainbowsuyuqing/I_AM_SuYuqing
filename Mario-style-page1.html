@@ -19,7 +19,7 @@
         var leftkeydown = 0, rightkeydown=0, upkeydown=0;           //判断对应按键是否按下
         var falldown = 0;                 							//判断马里奥是否属于下落状态
         const mario_width = 32, mario_height = 32;                   //马里奥的肩宽和身高
-        const tot_hill = 16, tot_cloud = 12, tot_wall = 7,tot_sewer = 7, tot_monster=2;  //总的山丘数目、云朵数目、墙体数目、管道数目、怪物数目
+        const tot_hill = 16, tot_cloud = 12, tot_wall = 8,tot_sewer = 7, tot_monster=2;  //总的山丘数目、云朵数目、墙体数目、管道数目、怪物数目
         var up_obstacle = false,down_obstacle=false,left_obstacle=false,right_obstacle=false;   //四个方位是否被阻挡
         var id1,id2,id3,id4,id5,id6,id7,id8,id9;     //setInterval的对应id
         var monster1_v = 1, monster2_v = 1;   		//怪物的移动速度
@@ -107,6 +107,15 @@
             };                  //wall6
         block[9] =w;
         /******************************************/
+        w=
+            {
+                left:1820,
+                right:1852,
+                up:320,
+                down:352
+            }; //wall8
+        block[10]=w;
+        /************************************/
         w =
             {
                 left:2270,
@@ -114,7 +123,7 @@
                 up:330,
                 down:362
             };
-        block[10] = w;           //the fort
+        block[11] = w;           //the fort
 
         w=
             {
@@ -123,7 +132,7 @@
                 up:250,
                 down:282
             };
-        block[11]=w; //invisible wall
+        block[12]=w; //invisible wall
 
 
 
@@ -148,24 +157,28 @@
                     {
                         if(i===2) {
 
-                            if(confirm('Do you want to see Break The Box page?')){
-                            window.location.href = "BreakTheBoxG.html";}
+                            if(confirm('Do you want to see Break The Box (Platformer Game) page?')){
+                                window.location.href = "BreakTheBoxG.html";}
 
                         }
                         if(i===7) {
-                            if(confirm('Do you want to see Watch Face page?')){
-                                window.location.href = "WatchFaceG.html";}
+                            if(confirm('Do you want to see Haunted House (VR Game) page?')){
+                                window.location.href = "VRG.html";}
                         }
                         if(i===8){
-                            if(confirm("Do you want to see PETIME page?")){
-                                window.location.href="PETIMEG.html";
+                            if(confirm("Do you want to see Watch Face page?")){
+                                window.location.href="WatchFaceG.html";
                             }
+                        }
+                        if(i===10){
+                            if(confirm('Do you want to see PETIME page?'))
+                                window.location.href="PETIMEG.html";
                         }
                         if(i===9){
                             if(confirm('Do you want to see UniqueU page?'))
                                 window.location.href="UniqueUG.html";
                         }
-                        if(i===10){
+                        if(i===11){
                             if(confirm('Do you want to see my handcrafts?'))
                                 window.location.href="./photo galleryg.html";
                         }
@@ -957,7 +970,7 @@
 </div>
 
 <div id="wall2">
-    <img style="float:left;" src="Surio/project1.gif">
+    <img style="float:left;" src="Surio/project1.png">
 </div>
 
 <div id="wall3">
@@ -974,18 +987,21 @@
 </div>
 <div id="wall5">
 
-    <img style="float:left;" src="Surio/project3.gif">
+    <img style="float:left;" src="Surio/project3.png">
 
 </div>
+
 <div id="wall6">
-
-    <img style="float:left;" src="Surio/project3.gif">
-
+    <img style="float:left;" src="Surio/project5.png">
 </div>
+
 <div id="wall7">
-    <img src="Surio/project2.gif">
+    <img style="float:left;" src="Surio/project2.png">
 </div>
 
+<div id="wall8">
+    <img style="float:left;" src="Surio/project4.png">
+</div>
 
 <!--云朵-->
 <div id="cloud1">

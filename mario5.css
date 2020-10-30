@@ -50,7 +50,7 @@ body
     width:3200px;
     height:50px;
     top:445px;
-    left:-1272px;
+    left:-1472px;
     z-index: 2;
 }
 
@@ -59,7 +59,7 @@ body
     position: absolute;
     height:32px;
     top:330px;
-    left:-1174px;
+    left:-1374px;
     z-index: 3;
 }
 
@@ -68,7 +68,7 @@ body
     position: absolute;
     height:32px;
     top:280px;
-    left:-720px;
+    left:-920px;
     z-index: 3;
 }
 #wall3
@@ -76,7 +76,7 @@ body
     position: absolute;
     height:32px;
     top:250px;
-    left:-480px;
+    left:-680px;
     z-index: 3;
 }
 #wall4
@@ -84,7 +84,7 @@ body
     position: absolute;
     height:32px;
     top:250px;
-    left:-80px;
+    left:-280px;
     z-index: 3;
 }
 #wall5
@@ -92,7 +92,7 @@ body
     position: absolute;
     height:32px;
     top:350px;
-    left:220px;
+    left:20px;
     z-index: 3;
 }
 #wall6
@@ -100,7 +100,7 @@ body
     position: absolute;
     height:32px;
     top:320px;
-    left:770px;
+    left:570px;
     z-index: 3;
 }
 #wall7
@@ -108,7 +108,7 @@ body
     position: absolute;
     height:32px;
     top:320px;
-    left:-180px;
+    left:-380px;
     z-index: 3;
 }
 #wall8
@@ -116,7 +116,7 @@ body
     position: absolute;
     height:32px;
     top:320px;
-    left:520px;
+    left:320px;
     z-index: 3;
 }
 #hill1
@@ -124,7 +124,7 @@ body
     position: absolute;
     height:95px;
     top:349px;
-    left:-1272px;
+    left:-1472px;
     z-index: 2;
 }
 #hill2
@@ -132,7 +132,7 @@ body
     position: absolute;
     height:95px;
     top:413px;
-    left:-1072px;
+    left:-1272px;
     z-index: 2;
 }
 #hill3
@@ -140,7 +140,7 @@ body
     position: absolute;
     height:95px;
     top:413px;
-    left:-772px;
+    left:-972px;
     z-index: 2;
 }
 #hill4
@@ -148,7 +148,7 @@ body
     position: absolute;
     height:95px;
     top:382px;
-    left:-472px;
+    left:-672px;
     z-index: 2;
 }
 #hill5
@@ -156,7 +156,7 @@ body
     position: absolute;
     height:95px;
     top:349px;
-    left:-102px;
+    left:-302px;
     z-index: 2;
 }
 #hill6
@@ -164,7 +164,7 @@ body
     position: absolute;
     height:95px;
     top:413px;
-    left:28px;
+    left:-172px;
     z-index: 2;
 }
 #hill7
@@ -172,7 +172,7 @@ body
     position: absolute;
     height:95px;
     top:382px;
-    left:328px;
+    left:128px;
     z-index: 2;
 }
 #hill8
@@ -180,7 +180,7 @@ body
     position: absolute;
     height:95px;
     top:413px;
-    left:428px;
+    left:228px;
     z-index: 2;
 }
 #hill9
@@ -188,7 +188,7 @@ body
     position: absolute;
     height:95px;
     top:413px;
-    left:628px;
+    left:428px;
     z-index: 2;
 }
 #hill10
@@ -196,7 +196,7 @@ body
     position: absolute;
     height:95px;
     top:413px;
-    left:1328px;
+    left:1128px;
     z-index: 2;
 }
 #hill11
@@ -204,7 +204,7 @@ body
     position: absolute;
     height:95px;
     top:349px;
-    left:1428px;
+    left:1228px;
     z-index: 2;
 }
 #hill12
@@ -212,7 +212,7 @@ body
     position: absolute;
     height:95px;
     top:413px;
-    left:1628px;
+    left:1428px;
     z-index: 2;
 }
 #hill13
@@ -220,7 +220,7 @@ body
     position: absolute;
     height:95px;
     top:382px;
-    left:1828px;
+    left:1628px;
     z-index: 2;
 }
 #hill14
@@ -228,7 +228,7 @@ body
     position: absolute;
     height:95px;
     top:413px;
-    left:2028px;
+    left:1828px;
     z-index: 2;
 }
 #hill15
@@ -236,7 +236,7 @@ body
     position: absolute;
     height:95px;
     top:349px;
-    left:2128px;
+    left:1928px;
     z-index: 2;
 }
 #hill16
@@ -244,7 +244,7 @@ body
     position: absolute;
     height:95px;
     top:413px;
-    left:2328px;
+    left:2128px;
     z-index: 2;
 }
 
@@ -253,7 +253,7 @@ body
     position: absolute;
     height:105px;
     top:120px;
-    left:-972px;
+    left:-1172px;
     z-index: 2;
 }
 #cloud2
@@ -261,7 +261,7 @@ body
     position: absolute;
     height:105px;
     top:100px;
-    left:-472px;
+    left:-672px;
     z-index: 2;
 }
 #cloud3
@@ -269,7 +269,7 @@ body
     position: absolute;
     height:105px;
     top:90px;
-    left:-772px;
+    left:-972px;
     z-index: 2;
 }
 #cloud4
@@ -277,7 +277,7 @@ body
     position: absolute;
     height:105px;
     top:90px;
-    left:-122px;
+    left:-322px;
     z-index: 2;
 }
 #cloud5
@@ -285,7 +285,7 @@ body
     position: absolute;
     height:105px;
     top:80px;
-    left:28px;
+    left:-172px;
     z-index: 2;
 }
 #cloud6
@@ -293,7 +293,7 @@ body
     position: absolute;
     height:105px;
     top:70px;
-    left:328px;
+    left:128px;
     z-index: 2;
 }
 #cloud7
@@ -301,7 +301,7 @@ body
     position: absolute;
     height:105px;
     top:105px;
-    left:528px;
+    left:328px;
     z-index: 2;
 }
 #cloud8
@@ -309,7 +309,7 @@ body
     position: absolute;
     height:105px;
     top:110px;
-    left:1328px;
+    left:1128px;
     z-index: 2;
 }
 #cloud9
@@ -317,7 +317,7 @@ body
     position: absolute;
     height:105px;
     top:70px;
-    left:1628px;
+    left:1428px;
     z-index: 2;
 }
 #cloud10
@@ -325,7 +325,7 @@ body
     position: absolute;
     height:105px;
     top:102px;
-    left:1868px;
+    left:1668px;
     z-index: 2;
 }
 #cloud11
@@ -333,7 +333,7 @@ body
     position: absolute;
     height:105px;
     top:100px;
-    left:2128px;
+    left:1928px;
     z-index: 2;
 }
 #cloud12
@@ -341,56 +341,56 @@ body
     position: absolute;
     height:105px;
     top:90px;
-    left:2428px;
+    left:2228px;
     z-index: 2;
 }
 #sewer1
 {
     position: absolute;
     top:382px;
-    left:-922px;
+    left:-1122px;
     z-index: 3;
 }
 #sewer2
 {
     position: absolute;
     top:349px;
-    left:-622px;
+    left:-822px;
     z-index: 3;
 }
 #sewer3
 {
     position: absolute;
     top:318px;
-    left:-322px;
+    left:-522px;
     z-index: 3;
 }
 #sewer4
 {
     position: absolute;
     top:382px;
-    left:1278px;
+    left:1078px;
     z-index: 3;
 }
 #sewer5
 {
     position: absolute;
     top:349px;
-    left:1678px;
+    left:1478px;
     z-index: 3;
 }
 #sewer6
 {
     position: absolute;
     top:318px;
-    left:1778px;
+    left:1578px;
     z-index: 3;
 }
 #sewer7
 {
     position: absolute;
     top:285px;
-    left:970px;
+    left:770px;
     z-index: 3;
 }
 

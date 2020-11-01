@@ -17,39 +17,79 @@
 <body>
 <canvas id="stage1" class="stage"></canvas>
 <canvas id="canvas" class="canvas"></canvas>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" onClick="javascript :history.back(-1);"><i class="fa fa-arrow-left" aria-hidden="true">back</i></a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="index.html">Homepage</a>
-          <a class="dropdown-item" href="work.html">General Mode</a>
-          <a class="dropdown-item" href="Mario-style-page.html">Game Mode</a>
-          <a class="dropdown-item" href="BreakTheBox.html">Break The Box</a>
-          <a class="dropdown-item" href="VR.html">Haunted House</a>
-          <a class="dropdown-item" href="WatchFace.html">Watch Face</a>
-          <a class="dropdown-item" href="PETIME.html">PETIME</a>
-          <a class="dropdown-item" href="UniqueU.html">UniqueU</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="photo%20gallery.html">Handcrafts</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
+<div id="menu-wrapper" style="scroll-padding-right: inherit">
+  <ul class="menu">
+    <img style=" text-align:left; width:6%" src="./image/suyuqingx.gif">
+    <li> <a href="#">Homepage</a> </li>
+    <li> <a href="#">Mode</a> </li>
+    <li> <a href="#">Projects</a> </li>
+  </ul>
+</div>
+<div id="submenu-wrapper" style="overflow-y:scroll">
+  <ul class="submenu" href="index.html">
+    <li>
+      <a href="index.html">
+        <img src="image/home.jpg" />
+        Homepage
+      </a>
+    </li>
+  </ul>
+  <ul class="submenu" href="index.html">
+    <li>
+      <a href="index.html">
+        <img src="image/home.jpg" />
+        Homepage
+      </a>
+    </li>
+  </ul>
+  <ul class="submenu">
+    <li>
+      <a href="work.html">
+        <img src="image/General.png"/>
+        View in general mode
+      </a>
+    </li>
+    <li>
+      <a href="Mario-style-page.html">
+        <img src="image/game界面.png" />
+        View in game mode
+      </a>
+    </li>
+
+  </ul>
+  <ul class="submenu">
+    <li>
+      <a href="BreakTheBox.html">
+        <img src="image/project1.png" />
+        Break The Box(Game)
+      </a>
+    </li>
+    <li>
+      <a href="VR.html">
+        <img src="image/haunted.png" />
+        Haunted House(VR Game)
+      </a>
+    </li>
+    <li>
+      <a href="WatchFace.html">
+        <img src="image/project2.png" />
+        Watch Face Design
+      </a>
+    </li>
+    <li>
+      <a href="PETIME.html">
+        <img src="image/product2.png" />
+        Petime(APP Design)
+      </a>
+    </li>
+    <li>
+      <a href="UniqueU.html">
+        <img src="image/handcrafts.png" />
+        UniqueU(APP Design)
+      </a>
+    </li>
+  </ul>
+</div>
 
   <main id="work">
     <h1 class="lg-heading" style="">

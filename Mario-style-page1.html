@@ -8,6 +8,22 @@
     <script type="text/javascript" src="./jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./mario1.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <a href="javascript:;" onclick="repeat()"></a>
+    <div id="modal_volume"
+         style="position: fixed; text-align: center; width: 100%; height: 100%; top: 0; z-index: 9999;display: none; ">
+        <table style="width: 100%; height: 100%;">
+            <tr>
+                <td align="center" style="">
+                    <div id="showimg" style="width: 900px; position: relative">
+                        <img style="width:120%" src="./Surio/100.gif" /></a>
+
+                        <a    href="javascript:$('#modal_volume').fadeOut(); window.location.href='./index.html';"
+                              style="display: block; width: 45px;color: white; height: 45px; position: absolute; right: 11px; top: 10px; z-index: 2">关闭</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
     <script type="text/javascript">
         var up=38, left=37 , right=39;                                   //三个按键
         var walk_right=0, walk_left=0, jump_up=0,jump_left_up=0,jump_right_up=0;   //判断当前马里奥的运动状态
@@ -179,8 +195,7 @@
                                 window.location.href="UniqueUG.html";
                         }
                         if(i===11){
-                            if(confirm('Do you want to see my handcrafts?'))
-                                window.location.href="./photo galleryg.html";
+                            $("#modal_volume").fadeIn();
                         }
 
                         return i+1;

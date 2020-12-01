@@ -1,6 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style type="text/css">
+        #divLoadCont{position:fixed; z-index:500; left:0; top:0; width:100%; height:100%; overflow: hidden;clip:rect(0,100%,100%,0); background-color:#fbfbfb; layer-background-color:#fbfbfb; }
+        #divLoad1{position:absolute; layer-background-color:#fbfbfb; background-color:#fbfbfb}
+        #divLoad2{text-align:center;position:absolute; left:0; top:0; layer-background-color:navy; background-color:navy}
+        #divLoadText{text-align:center;background-color:#fbfbfb; font-family:arial,helvetica; color:Navy; font-size:20px; }
+
+    </style>
+    <script language="JavaScript" type="text/javascript">
+        function lib_bwcheck(){ //Browsercheck (needed)
+            this.ver=navigator.appVersion
+            this.agent=navigator.userAgent
+            this.dom=document.getElementById?1:0
+            this.opera5=this.agent.indexOf("Opera 5")>-1
+            this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom && !this.opera5)?1:0;
+            this.ie6=(this.ver.indexOf("MSIE 6")>-1 && this.dom && !this.opera5)?1:0;
+            this.ie4=(document.all && !this.dom && !this.opera5)?1:0;
+            this.ie=this.ie4||this.ie5||this.ie6
+            this.mac=this.agent.indexOf("Mac")>-1
+            this.ns6=(this.dom && parseInt(this.ver) >= 5) ?1:0;
+            this.ns4=(document.layers && !this.dom)?1:0;
+            this.bw=(this.ie6 || this.ie5 || this.ie4 || this.ns4 || this.ns6 || this.opera5)
+            return this
+        }
+        var bw=new lib_bwcheck()
+        numImages=10 //How many images you have in your page
+        loaderWidth=300 //The width of the loadbar
+
+        currentImg=0
+        function lib_doc_size(){
+            this.x=0;this.x2=bw.ie && document.body.offsetWidth-20||innerWidth||0;
+            this.y=0;this.y2=bw.ie && document.body.offsetHeight-5||innerHeight||0;
+            if(!this.x2||!this.y2) return message('Document has no width or height')
+            this.x50=this.x2/2;this.y50=this.y2/2;
+            return this;
+        }
+        function lib_obj(obj,nest){
+            nest=(!nest) ? "":'document.'+nest+'.'
+            this.evnt=bw.dom? document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?eval(nest+"document.layers." +obj):0;
+            this.css=bw.dom||bw.ie4?this.evnt.style:this.evnt;
+            this.ref=this.css
+            this.w=this.evnt.offsetWidth||this.css.clip.width||
+                this.ref.width||this.css.pixelWidth||0;
+            return this
+        }
+        lib_obj.prototype.moveIt = function(x,y){
+            this.x=x;this.y=y; this.css.left=x;this.css.top=y
+        }
+        lib_obj.prototype.clipTo = function(t,r,b,l,setwidth){
+            this.ct=t; this.cr=r; this.cb=b; this.cl=l
+            if(bw.ns4){
+                this.css.clip.top=t;this.css.clip.right=r
+                this.css.clip.bottom=b;this.css.clip.left=l
+            }else{
+                if(t<0)t=0;if(r<0)r=0;if(b<0)b=0;if(b<0)b=0
+                this.css.clip="rect("+t+","+r+","+b+","+l+")";
+                if(setwidth){this.css.pixelWidth=this.css.width=r;
+                    this.css.pixelHeight=this.css.height=b}
+            }
+        }
+        var oLoad2
+        function startLoading(){
+            page=new lib_doc_size()
+            oLoadCont=new lib_obj('divLoadCont')
+            oLoad=new lib_obj('divLoad1','divLoadCont')
+            oLoad2=new lib_obj('divLoad2','divLoadCont.document.divLoad1')
+            oLoadText=new lib_obj('divLoadText','divLoadCont.document.divLoad1')
+            oLoad.moveIt(page.x50-loaderWidth/2,page.y50-20)
+            oLoadText.moveIt(loaderWidth/2 - oLoadText.w/2,10)
+            oLoad.clipTo(0,loaderWidth,40,0,1)
+            oLoad2.per = loaderWidth/numImages
+        }
+        function loadIt(ok){
+            currentImg++
+            if(oLoad2) oLoad2.clipTo(0,oLoad2.per*currentImg,40,0,1)
+            if(!ok){
+                oLoadCont.css.visibility='hidden'
+                oLoadCont=null; oLoad1=null; oLoad2=null;
+            }
+        }
+        function loadIt_display(ok){
+            currentImg++
+            if(oLoad2) oLoad2.clipTo(0,oLoad2.per*currentImg,40,0,1)
+            if(currentImg<=numImages) setTimeout("loadIt_display(1)",200)
+            else{
+                oLoadCont.css.visibility='hidden'
+            }
+        }
+    </script>
+    <div id="divLoadCont">
+        <div id="divLoad1">
+            <div id="divLoad2"></div><br>
+            <div id="loadimg" style="background: white#fbfbfb; text-align: center; padding-top:10%"  ><img src="1.gif" width="40%"> </div>
+            <div id="divLoadText" >LOADING...</div>
+        </div>
+    </div>
+    <script>
+        startLoading()
+        //onload=loadIt; //- LEAVE THIS LINE WHILE TESTING. UNCOMMENT WHEN READY
+        loadIt_display(1) //LEAVE THIS LINE WHILE TESTING. DELETE WHEN READY
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,7 +166,7 @@
         </li>
         <li>
             <a href="Mario-style-page.html">
-                <img src="image/game界面.png" />
+                <img src="image/game.png" />
                 View in game mode
             </a>
         </li>
@@ -154,7 +254,7 @@
             </div>
             <div style="padding-left: 3%" class="col-md-8 col-sm-8 col-lg-8 col-16 text-center mt-md-0 mt-2">
                 <a href="Mario-style-page.html">
-                <img class="img-fluid" src="./image/game%E7%95%8C%E9%9D%A2.png" alt="GAME MODE">
+                <img class="img-fluid" src="./image/game.png" alt="GAME MODE">
                     <div style="background-color:black; padding: 3%; opacity: 70%" >
                 <h4 style="background-color: black">GAME MODE</h4></a>
                 <h6 style="background-color: black; color: white">Collect the magic power needed to enter the castle by browsing my projects, and finally get the treasure. (The projects are the same as the website on the left)</h6>
@@ -189,7 +289,7 @@
             <div class="col-md-4 col-16">
                 <h3 class="text-center">GET IN TOUCH</h3>
                 <address class="text-center">
-                    <strong>E-mail：</strong><br>
+                    <strong>E-mail:</strong><br>
                     suyuqingrainbow@outlook.com<br>
                     <strong><abbr title="Phone">Phone:</abbr></strong>
                     <br>+86 13063626611<br>
